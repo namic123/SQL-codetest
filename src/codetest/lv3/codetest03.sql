@@ -1,0 +1,5 @@
+-- 프로그래머스 3레벨 - 없어진 기록 찾기
+SELECT o.animal_id, o.name
+FROM ANIMAL_OUTS o LEFT JOIN ANIMAL_INS i
+USING (ANIMAL_ID)
+WHERE i.ANIMAL_ID IS NULL;
